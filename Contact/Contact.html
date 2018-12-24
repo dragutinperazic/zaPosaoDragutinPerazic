@@ -1,0 +1,154 @@
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Za Posao</title>
+  <meta name="description" content="testiranje za posao">
+  <meta name="author" content="Dragutin Perazic" >
+
+  <link rel="stylesheet" type="text/css" href="contact.css">
+
+
+<script src='https://www.google.com/recaptcha/api.js?render=6LdFO4QUAAAAAHeb8-NZ_sai3Iz5vyUUkZbPv-rx'></script>
+<script>
+grecaptcha.ready(function() {
+grecaptcha.execute('6LdFO4QUAAAAAHeb8-NZ_sai3Iz5vyUUkZbPv-rx', {action: 'homepage'})
+.then(function(token) {
+        var recaptchaResponse = document.getElementById("captcha");
+         recaptchaResponse.value = token;
+});
+});
+</script>
+
+
+
+</head>
+
+<body>
+<div style="display:grid ;grid-template-columns: 1fr minmax(600px ,1000px) 1fr;">
+<div></div>
+
+<div id="container" >
+
+<!--SECTION 1 -->
+<div></div>
+<div style= "display:flex">
+<div style="flex:1;align-items:end;">
+<span id="d_slovo">&nbsp;D </span> &nbsp; <span id="display_slova" style=""> Display </span>
+</div>
+<div id ="ikonice" style="display:flex; flex:1;align-items:end;justify-content:right;padding-bottom:8px;">
+ <img src="ikone/twitter.svg" alt="" style="width:25px;height:25px;filter: grayscale(100%);">&nbsp;&nbsp;
+ <img src="ikone/facebook.svg" alt=""  style="width:25px;height:25px;filter:grayscale(100%);">&nbsp;&nbsp;
+ <img src="ikone/mreza.svg" alt="" style="width:25px;height:25px;filter:grayscale(100%);">&nbsp;&nbsp;
+ <img src="ikone/pinterest.svg" alt="" style="width:25px;height:25px;filter:grayscale(100%);">&nbsp;&nbsp;
+ <img src="ikone/googleplus.svg" alt="" style="width:25px;height:25px;filter:grayscale(100%);">&nbsp;&nbsp;
+ <img src="ikone/picasa.svg" alt="" style="width:25px;height:25px;filter:grayscale(100%);">
+</div>
+</div>
+<div></div>
+
+<!--SECTION 2-->
+<div></div>
+<div style="display:flex;align-items:center;"><hr></div>
+<div></div>
+
+<!--SECTION 3-->
+<div></div>
+<div id="menu"><a href="../Home/Home.html">HOME</a>&nbsp;&nbsp;<a href="../About/About.html">ABOUT</a>&nbsp;&nbsp;<a href= "../Work/Work.html">WORK</a>&nbsp;&nbsp;<a href= "Contact.html">CONTACT</a></div>
+<div></div>
+
+
+
+
+
+<!--SECTION 4-->
+<div style="background-color:green"></div>
+<div style="background-color:green;color:white;display:flex;align-items:center;" >
+<p>GOT A QUESTION OR INQUIRY ?</p>
+</div>
+<div style="background-color:green"></div>
+
+
+
+<!--SECTION 5-->
+<div id="item_mapa"></div>
+
+
+
+
+<!--SECTION 6-->
+<div id=""></div>
+<div style="display:flex;">
+<div style="flex:1.1;color:grey;">
+<br><br>
+<p><b>CONTACT FORM</b></p>
+<br>
+<p >Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt sit amet est at dapibus. </p><br>
+ 
+ <form id = "usr" action="sendmail.php" method="post" onsubmit="return validate()" style="color:grey">
+  <input id="name" placeholder="name" type="text" name="name"  ><br><br>
+  <input id="email1" placeholder="email" type="email" name="email" ><br><br>
+  <input placeholder="subject" type="text" name="subject" ><br><br>
+  <textarea id="message" rows="10" cols="40" name="message" form="usr"></textarea><br><br>
+  <input type="submit" value="Submit" style="background-color:green;width:200px; height:30px;">
+  <input type="hidden" name="recaptcha_response" id="captcha">
+</form> 
+<div id=""></div>
+</div>
+
+
+
+<div style="flex:1;color:grey;padding-left:25px;">
+<br><br>
+<b>CONTACT INFO</b><br><br>
+Lorem ipsum dolor sit amet, consectetur adipiscing elit. In tincidunt sit.<br><br>
+<b>email:info@display.com</b>
+<b>phone:1.306.222.4545</b><br><br>
+222 2nd Ave South<br>
+Saskabush SK S7M 1T6<br><br><br>
+<b>STORE HOURS</b><br><br>
+<div style="display:grid;grid-template-columns: 1.8fr 1fr;grid-template-rows: 25px 25px 25px 25px">
+<div>Monday - Thursday</div><div>8 am - 5 pm</div>
+<div>Friday</div><div>8 am - 6 pm</div>
+<div>Saturday</div><div>9 am - 6 pm</div>
+<div>Sunday & Holydays</div><div>Closed</div>
+</div>
+</div>
+
+
+
+</div>
+<div></div>
+
+
+
+
+<!--SECTION 7-->
+<div id="item17" style="display:flex;">
+<div style="flex:2;display:flex;align-items:center;justify-content:center;">ARE YOU READY TO BE BLOWN AWAY ?
+</div>
+<div style="flex:1;display:flex;align-items:center;">
+<button>CLICK HERE TO FIND OUT</button>
+</div>
+</div>
+
+<!-- FOOTER  8-->
+<div id="item18" style="display:flex;">
+<div style="flex:1.8;display:flex;align-items:center;justify-content:center;">
+COPYRIGHT 2013 DISPLAY. ALL RIGHTS RESERVED
+</div>
+<div style="flex:1;display:flex;align-items:center;">
+HOME / ABOUT / WORK / CONTACT 
+</div>
+</div>
+
+</div> 
+<div></div>
+</div>
+<script src="javascript.js"></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB9H3m7tzOnq6dXt5cW-le9aBNsor2vbfk&callback=initMap"></script>
+   
+
+
+</body>
+</html>
