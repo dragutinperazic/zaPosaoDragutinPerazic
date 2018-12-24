@@ -1,0 +1,59 @@
+var crs = new Array();
+var obj = {slika:"slike/1.jpeg", veza:"http://www.yahoo.com"};
+crs.push(obj);
+obj = {slika:"slike/2.jpeg", veza:"http://www.google.com"};
+crs.push(obj);
+obj = {slika:"slike/3.jpeg", veza:"http://www.cdm.me"};
+crs.push(obj);
+obj = {slika:"slike/4.jpeg", veza:"http://www.vijesti.me"};
+crs.push(obj);
+obj = {slika:"slike/5.jpeg", veza:"http://www.facebook.com"};
+crs.push(obj);
+
+function youtube()
+{
+
+
+	var width  = "width=" + 600;
+	var height = "height=" + 480;
+	var left   = "left=" + (screen.width  - 600)/2;
+	var top    = "top=" + (screen.height - 480)/2;
+	var videoId ="eH3PoxjcPFw";
+   window.open("http://www.youtube.com/embed/" + videoId, document.title, "location=no, directories=no, menubar=no, toolbar=no, scrollbars=no, status=no, resizable=yes, " + width + ", " + height + ", " + left + ", " + top );
+}
+
+function naprijed()
+{
+//alert("naprijed");
+var temp = crs[4]; 
+crs.pop();
+crs.splice(0,0,temp);
+prikazi();
+}
+
+function nazad()
+{
+//alert("nazad");
+var temp = crs[0]; 
+crs.shift();
+crs.push(temp);
+prikazi();
+
+
+}
+
+function prikazi()
+{
+//alert("prikazi");
+document.getElementById("crs_1").src = crs[0].slika;
+document.getElementById("crs_2").src = crs[1].slika;
+document.getElementById("crs_3").src = crs[2].slika;
+document.getElementById("crs_4").src = crs[3].slika;
+document.getElementById("crs_5").src = crs[4].slika;
+
+document.getElementById("clickable").href = crs[2].veza;
+
+
+
+
+}
