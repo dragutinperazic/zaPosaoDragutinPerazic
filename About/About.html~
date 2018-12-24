@@ -1,0 +1,181 @@
+
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Za Posao</title>
+  <meta name="description" content="testiranje za posao">
+  <meta name="author" content="Dragutin Perazic" >
+
+  <link rel="stylesheet" type="text/css" href="about.css">
+
+</head>
+
+<body>
+
+<div style="display:grid ;grid-template-columns: 1fr minmax(600px ,900px) 1fr;">
+<div></div>
+<div id="container" >
+
+<!--SECTION 1 -->
+<div></div>
+<div style= "display:flex">
+<div style="flex:1;align-items:end;">
+<span id="d_slovo">&nbsp;D </span> &nbsp; <span id="display_slova" style=""> Display </span>
+</div>
+<div id ="ikonice" style="display:flex; flex:1;align-items:end;justify-content:right;padding-bottom:8px;">
+ <img src="ikone/twitter.svg" alt="" style="width:25px;height:25px;filter: grayscale(100%);">&nbsp;&nbsp;
+ <img src="ikone/facebook.svg" alt=""  style="width:25px;height:25px;filter:grayscale(100%);">&nbsp;&nbsp;
+ <img src="ikone/mreza.svg" alt="" style="width:25px;height:25px;filter:grayscale(100%);">&nbsp;&nbsp;
+ <img src="ikone/pinterest.svg" alt="" style="width:25px;height:25px;filter:grayscale(100%);">&nbsp;&nbsp;
+ <img src="ikone/googleplus.svg" alt="" style="width:25px;height:25px;filter:grayscale(100%);">&nbsp;&nbsp;
+ <img src="ikone/picasa.svg" alt="" style="width:25px;height:25px;filter:grayscale(100%);">
+</div>
+</div>
+<div></div>
+
+<!--SECTION 2-->
+<div></div>
+<div style="display:flex;align-items:center;"><hr></div>
+<div></div>
+
+<!--SECTION 3-->
+<div></div>
+<div id="menu"><a href="../Home/Home.html">HOME</a>&nbsp;&nbsp;<a href="About.html">ABOUT</a>&nbsp;&nbsp;<a href= "../Work/Work.html">WORK</a>&nbsp;&nbsp;<a href= "../Contact/Contact.html">CONTACT</a></div>
+<div></div>
+
+
+
+
+
+<!--SECTION 4-->
+<div style="background-color:green"></div>
+<div style="background-color:green;color:white;display:flex;align-items:center;" >
+<p>ABOUT MY BUSINESS ?</p>
+</div>
+<div style="background-color:green"></div>
+
+<!--SECTION 5-->
+<div></div>
+<div></div>
+<div></div>
+
+
+<!--SECTION 6-->
+<div></div>
+<div style="display:flex;">
+<div style="flex:1.5;display:flex;"><img src="slike/radnik.jpeg" alt="" /></div>
+<div style="flex:2;padding-left:20px;color:grey;">
+<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam in lacinia metus. Etiam maximus, arcu in 
+porta ornare, dolor augue laoreet velit, sed commodo massa turpis ut nisi. Cras nunc tellus, ultrices elementum ipsum
+<p/><br>
+<p>
+Porta ornare, dolor augue laoreet velit,Nam in lacinia metus. Etiam maximus, arcu in 
+sed commodo massa turpis ut nisi. Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+<p/>
+
+</div>
+</div>
+<div></div>
+
+
+<div></div>
+<div></div>
+<div></div>
+
+
+
+
+<div></div>
+<div style="display:flex;color:grey;">
+<div style="flex:2;padding-right:15px;">
+MISSION STATEMENT <br><br>
+Etiam maximus, arcu in  Nam in lacinia metus. Etiam maximus, arcu in 
+porta ornare, dolor augue laoreet velit, sed commodo massa turpis ut nisi.
+sed commodo massa turpis ut nisi. Lorem ipsum dolor sit amet,laoreet velit, sed commodo massa turpis ut nisi.
+sed commodo massa turpis ut nisi. 
+</div>
+<div style="flex:1.5;">
+FUN FACTS <br><br>
+ Sarcu in  Nam in lacinia metus. Etiam maximus, arcu in 
+porta ornare, dolor augue laoreet velit,Etiam maximus, sed commodo massa turpis ut nisi.
+sed commodo massa turpis ut nisi. Lorem ipsum dolor sit amet,laoreet velit, sed commodo massa turpis ut nisi.
+sed commodo massa turpis ut nisi. 
+</div>
+</div>
+<div></div>
+
+<div></div>
+<div></div>
+<div></div>
+
+<div style ="background-color:lightgrey;"></div>
+<div style="display:flex;background-color:lightgrey;">
+
+
+<div class="tabovi" style="flex:1;display:flex;flex-direction:column;" onclick="websites()">
+<div style="flex:2; display:flex; align-items:center;justify-content:center"><img src="ikone/website.svg" alt="" style="width:40px;height:40px;"></div>
+<div style ="flex:1;text-align:center;">WEBSITES</div>
+</div>
+
+<div class="tabovi" style="flex:1;display:flex;flex-direction:column;" onclick="photography()">
+<div style="flex:2; display:flex; align-items:center;justify-content:center"><img src="ikone/photography.svg" alt="" style="width:40px;height:40px;"></div>
+<div style ="flex:1;text-align:center;">PHOTOGRAPHY</div>
+</div>
+
+<div class="tabovi" style="flex:1;display:flex;flex-direction:column;" onclick="seo()">
+<div style="flex:2; display:flex; align-items:center;justify-content:center"><img src="ikone/seo.svg" alt="" style="width:40px;height:40px;"></div>
+<div style ="flex:1;text-align:center;">SEO</div>
+</div>
+
+<div class="tabovi" style="flex:1;display:flex;flex-direction:column;">
+<div style="flex:2; display:flex; align-items:center;justify-content:center" onclick="applications()"><img src="ikone/applications.svg" alt="" style="width:40px;height:40px;"></div>
+<div style ="flex:1;text-align:center;">APPLICATIONS</div>
+</div>
+
+
+</div>
+<div style="background-color:lightgrey;"></div>
+
+
+
+<div></div>
+<div id ="websites"></div>
+<div id ="photography" style="display:none; background-color:red;">29</div>
+<div id ="seo" style="display:none; background-color:green;"></div>
+<div id ="applications" style="display:none; background-color:blue;">29</div>
+
+
+<div></div>
+
+<!--SECTION 7-->
+<div id="item17" style="display:flex;">
+<div style="flex:2;display:flex;align-items:center;justify-content:center;">ARE YOU READY TO BE BLOWN AWAY ?
+</div>
+<div style="flex:1;display:flex;align-items:center;">
+<button>CLICK HERE TO FIND OUT</button>
+</div>
+</div>
+
+<!-- FOOTER  8-->
+<div id="item18" style="display:flex;">
+<div style="flex:1.8;display:flex;align-items:center;justify-content:center;">
+COPYRIGHT 2013 DISPLAY. ALL RIGHTS RESERVED
+</div>
+<div style="flex:1;display:flex;align-items:center;">
+HOME / ABOUT / WORK / CONTACT 
+</div>
+</div>
+
+</div> 
+<div></div>
+</div>
+<script src="javascript.js"></script>
+
+
+
+
+
+
+</body>
+</html>
